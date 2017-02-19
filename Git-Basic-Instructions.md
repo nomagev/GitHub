@@ -36,7 +36,7 @@
     * **Set your Email** - please enter the following command:
     ```git config --global user.email "example@example.com"``` 
 
-### 4. Operating with Git:
+### 4. First Operations with Git:
 
 **Note:** Assumption is you have an operative account on a major Git online repository (i.e. [GitHub](http://www.github.com)).
 
@@ -52,3 +52,12 @@
 * **Transfer Files into your online Repository** - After commiting your file or files, you may send them to your online repository for consolidation (you will "push" your changes to the repository). You will do so by using following command:
     ```git push -u origin master```
 * **Introducing git repository service credentials** - While you transfer files into your git repository, the destination service may request your credentials. This may be reflected on your system requesting username and password: you may be required to enter those credentials to access the destination service repository.
+
+### 5. On-going Operations with Git:
+
+**Note:** Assumption is you have been operating with git before, as the following instructions assume recurring interactions.
+
+* **On-going Operations** - Once you have created files and git is active on your repository, every time a file is modified and saved on the local clone of the repository, git will keep track of it. To have visibility on what is happening, the following three commands will have a recurring use:<br><br>
+    ```git status```<br>
+    ```git commit -m "Commit Message" filename```<br>
+    ```git push -u origin master```
