@@ -40,6 +40,9 @@
 
 **Note:** Assumption is you have an operative account on a major Git online repository (i.e. [GitHub](http://www.github.com)).
 
+* **Start git** - Before starting to work with git, you need to initiate it for tracking purposes:
+    ```git init```
+
 * **Clone Repository** - Clone an online repository, under your local target folder, by using following command:
     ```git clone http://www.repository-to-clone-example-url.com```
 
