@@ -32,7 +32,7 @@
 * Create a folder on which you may be able to start working with Git. If existing, just navigate to it from the MINGW64 (Git Bash) Window using the "cd + folder" instructions
 * Configure git to be able to work with GitHub or other Git related systems:
     * **Set your Username** - please enter the following command:
-    ```git config --global user.name "Username"``` 
+    ```git config --global user.name "Username"```
     * **Set your Email** - please enter the following command:
     ```git config --global user.email "example@example.com"``` 
 
@@ -52,8 +52,10 @@
     ```git status```
 * **Commit Files into your Repository** - Once you finish with the changes on the files you are working on under git, you will have to commit them. You will do so by using following command:
     ```git commit -m "Commit Message" filename```
-* **Transfer Files into your online Repository** - After commiting your file or files, you may send them to your online repository for consolidation (you will "push" your changes to the repository). You will do so by using following command:
-    ```git push -u origin master```
+* **Pushing Files from your local client into your online Repository** - After commiting your file or files, you may send them to your online repository for consolidation (you will "push" your changes to the repository). You will do so by using following command:
+    ```git push```
+* **Pulling Files from your online Repository into your local client** - In case other changes may have been pushed into the online repository or, if you push your changes on a certain machine into the online repository, and you would like to replicate them into another client where you may be working on, you will have to "pull" the changes into it. You will do so by using following command:
+    ```git pull```
 * **Introducing git repository service credentials** - While you transfer files into your git repository, the destination service may request your credentials. This may be reflected on your system requesting username and password: you may be required to enter those credentials to access the destination service repository.
 
 ### 5. On-going Operations with Git:
@@ -63,4 +65,6 @@
 * **On-going Operations** - Once you have created files and git is active on your repository, every time a file is modified and saved on the local clone of the repository, git will keep track of it. To have visibility on what is happening, the following three commands will have a recurring use:<br><br>
     ```git status```<br>
     ```git commit -m "Commit Message" filename```<br>
-    ```git push -u origin master```
+    ```git push```<br>
+    ```git pull``` (if you are working from multiple local clients or with other people and you would like to refresh the changes pushed into the online repository)<br>
+    
