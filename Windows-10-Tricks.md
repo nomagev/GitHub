@@ -16,3 +16,12 @@ To do so:
 2. Rename folder name to: `GodMode.{ED7BA470-8E54-465E-825C-99712043E01C}`
 3. Enjoy it and be careful.
 
+## Tip 2M- Equivalent of UNIX's `cd ~` in Windows Command Promt (also works on Windows 7)
+
+There is a way to quickly switch from anywhere in Windows Command Prompt Path into the User Home.
+
+This is the equivalent of UNIX's `cd ~`
+
+To do so:
+
+1. Just type on your Windows Command prompt `cd %USERPROFILE%`
