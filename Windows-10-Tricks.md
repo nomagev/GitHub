@@ -37,14 +37,14 @@ There's a way to change this behavior, so your default starting path is c:Users/
 
 To do so:
 
-1. Open "regedit" tool on Windows (Windows Key and then type "regedit")
+1. Open Windows Registry Editor (Press `Windows Key`, type `regedit` and press `enter`).
 2. Follow the following path in regedit:
   * HKEY_LOCAL_MACHINE
   * Software
   * Microsoft
   * Command Processor
-3. Create a new registry key (Select "Expandable String Value")
-4. Call it *AutoRun*
+3. Once in "Command Processor", create a new registry key (Select `Expandable String Value`)
+4. Call it `AutoRun`
 5. Enter `cd /d %USERPROFILE%` command as value into it.
-6. Close regedit and test it by opening Windows Command Prompt (cmd.exe).
+6. Close regedit and test it by opening Windows Command Prompt (Press `Windows Key`, type `cmd` and press `enter`).
 
