@@ -69,4 +69,24 @@
     ```git commit -m "Commit Message" filename```<br>
     ```git push```<br>
     ```git pull```<br>
-    
+
+### 6. Commits Operations:
+
+**Note:** Assumption is you have been operating with git and you have your own repository with multiple commits.
+
+* **Removing a commit wrongly pushed** - it may happen, at some point, that something, somewhere, went terribly wrong in your code. There are two solutions for it:<br><br>
+
+1. Fix it, re-commit the changes and push them to your repository (preferred option).
+2. Delete the commit from the repository and go back to the previous state (not preferred).
+
+  **Note:** This is not a preferred way of working, but sometimes you may no other way.
+
+
+How to exit the Vim editor
+Hit the Esc key; that goes into command mode. Then you can type
+:q to quit (short for :quit)
+:q! to quit without saving (short for :quit!)
+:wq to write and quit (think write and quit)
+:wq! to write and quit even if file has only read permission (if file does not have write permission: force write)
+:x to write and quit (similar to :wq, but won't write if there are no changes)
+:qa to quit all (short for :quitall)
