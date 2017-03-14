@@ -148,9 +148,8 @@ Hit the *Esc* key; that goes into command mode. Then you have the following opti
 
 **Note:** Assumption is you have been operating with git and you have your own repository with multiple commits.
 
-    ```git branch branchname```<br>
-    ```git checkout branchname```<br>
-    ```git status```<br>
-    ```git commit -m "Commit Message" filename```<br>
-    ```git push```<br>
-    ```git pull```<br>
+  ```
+  git branch branchname
+  git checkout branchname
+  git branch -d branch_name
+  ```
