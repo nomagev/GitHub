@@ -64,7 +64,7 @@
 
 * **On-going Operations** - Once you have created files and git is active on your repository, every time a file is modified and saved on the local clone of the repository, git will keep track of it. To have visibility on what is happening, the following three commands will have a recurring use:<br><br>
     ```git init .```<br>
-    ```git add filename (or .)```<br>
+    ```git add filename (or . if you want to add all files in the directory)```<br>
     ```git status```<br>
     ```git commit -m "Commit Message" filename```<br>
     ```git push```<br>
@@ -77,16 +77,65 @@
 * **Removing a commit wrongly pushed** - it may happen, at some point, that something, somewhere, went terribly wrong in your code. There are two solutions for it:<br><br>
 
 1. Fix it, re-commit the changes and push them to your repository (preferred option).
-2. Delete the commit from the repository and go back to the previous state (not preferred).
+2. Remove the commit from the repository and go back to the previous state (not preferred).
 
   **Note:** This is not a preferred way of working, but sometimes you may no other way.
 
+If you want to remove the commit form the repository (Option 2), these are the following steps you need to follow:
 
-How to exit the Vim editor
-Hit the Esc key; that goes into command mode. Then you can type
-:q to quit (short for :quit)
-:q! to quit without saving (short for :quit!)
-:wq to write and quit (think write and quit)
-:wq! to write and quit even if file has only read permission (if file does not have write permission: force write)
-:x to write and quit (similar to :wq, but won't write if there are no changes)
-:qa to quit all (short for :quitall)
+`git rebase -i HEAD~2` It will open a file displaying the last two commits into your repository.
+
+A new window will open with a text editor (default git editor is VIM, unless you selected another editor into the `git config --global` configuration file.
+
+The file will show something like the following:
+
+```
+pick 6d8301e Bad Commit
+pick 971ed7d Fixing Code
+# Rebase 3254a6e..971ed7d onto 3254a6e (2 commands)
+#
+# Commands:
+# p, pick = use commit
+# r, reword = use commit, but edit the commit message
+# e, edit = use commit, but stop for amending
+# s, squash = use commit, but meld into previous commit
+# f, fixup = like "squash", but discard this commit's log message
+# x, exec = run command (the rest of the line) using shell
+# d, drop = remove commit
+#
+# These lines can be re-ordered; they are executed from top to bottom.
+#
+# If you remove a line here THAT COMMIT WILL BE LOST.
+#
+# However, if you remove everything, the rebase will be aborted.
+#
+# Note that empty commits are commented out
+```
+
+Go then to the line containing the commit you want to remove and change the "pick" word to "drop".
+
+The first line (containing the bad commit we want to replace) will then look like follows:
+
+```
+drop 6d8301e bad commit
+pick 971ed7d Fixing Code
+.
+.
+.
+
+```
+
+You will finally need to save the change and quit the editor. For VIM, you should press *ESC* key and then press *:wq* 
+
+**FYI - How to exit the Vim editor**
+
+Hit the *Esc* key; that goes into command mode. Then you have the following options you may need to type (including the colon):
+
+```
+:q   - to quit (short for :quit)
+:q!  - to quit without saving (short for :quit!)
+:wq  - to write and quit (think write and quit)
+:wq! - to write and quit even if file has only read permission (if file does not have write permission: force write)
+:x   - to write and quit (similar to :wq, but won't write if there are no changes)
+:qa  - to quit all (short for :quitall)
+```
