@@ -56,6 +56,9 @@
     ```git push```
 * **Pulling Files from your online Repository into your local client** - In case other changes may have been pushed into the online repository or, if you push your changes on a certain machine into the online repository, and you would like to replicate them into another client where you may be working on, you will have to "pull" the changes into it. You will do so by using following command:
     ```git pull```
+* **Discarding changes on a local file** - In case certain changes may not be clear and do not want to be pushed to the repository, you can always checkout the file (worse case scenario, after that, you can always pull the copy in the online repository to make sure everything reverts back to the latest version). You will do so by using following command:
+    ```git ckeckout filename (or . for all files within a folder)```
+    
 * **Introducing git repository service credentials** - While you transfer files into your git repository, the destination service may request your credentials. This may be reflected on your system requesting username and password: you may be required to enter those credentials to access the destination service repository.
 
 ### 5. On-going Operations with Git:
@@ -67,6 +70,7 @@
     ```git add filename (or . if you want to add all files in the directory)```<br>
     ```git status```<br>
     ```git commit -m "Commit Message" filename```<br>
+    ```git checkout filename (or . if you want to add all files in the directory)```<br>
     ```git push```<br>
     ```git pull```<br>
 
@@ -139,3 +143,14 @@ Hit the *Esc* key; that goes into command mode. Then you have the following opti
 :x   - to write and quit (similar to :wq, but won't write if there are no changes)
 :qa  - to quit all (short for :quitall)
 ```
+
+### 6. Branching Operations:
+
+**Note:** Assumption is you have been operating with git and you have your own repository with multiple commits.
+
+    ```git branch branchname```<br>
+    ```git checkout branchname```<br>
+    ```git status```<br>
+    ```git commit -m "Commit Message" filename```<br>
+    ```git push```<br>
+    ```git pull```<br>
