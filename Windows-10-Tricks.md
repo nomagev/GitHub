@@ -48,3 +48,29 @@ To do so:
 5. Enter `cd /d %USERPROFILE%` command as value into it.
 6. Close regedit and test it by opening Windows Command Prompt (Press `Windows Key`, type `cmd` and press `enter`).
 
+### Tip 4 - Use "Someonewhocares.org" host file as a manual firewall
+#### Note: it also works on Windows 8 and previous (although with slightly different paths to find Windows's host file).
+
+Every time you ran a website, it may contain calls to "SPAM-like" sites, or just advertising networks or similar. Not only they consume bandwith, but they also could bring malicious or just tracking code within.
+
+Also, Windows 10 now includes some calls to Microsoft Servers to compile telemetry information about your computer and your usage.
+
+Wouldn't it be great if you could stop that?
+
+There is an old-fashion, and yet very effective way to avoid that, by using a manual firewall using Dan Pollock's [someonewhocares.org](http://someonewhocares.org) host file.
+
+**Please note:** Using Dan's host file does substitute the use and/or need of antivirus software or similare protective technologies. Also, using this method, you will remove all customizations into your Windows host file.
+
+To do so:
+
+1. Go to [someonewhocares.org/hosts](http://someonewhocares.org/hosts).
+2. Select "txt file" on the right-side menu (or simply download the file).
+3. Open downloaded file (it may @ [%USERPROFILE%/Downloads](%USERPROFILE%/Downloads) under hosts.txt name).
+  - Select All content within the file (CONTROL + A)
+  - Copy the content of if (CONTROL + C).
+  - Close the file.
+4. On Windows 10, go to  [C:\Windows\System32\drivers\etc\hosts](C:\Windows\System32\drivers\etc\hosts)
+5. Find Notepad Application and, to open it, right-click on it and and select "Run as Administrator"
+  - Select All content within the file (CONTROL + A)
+  - Past the content of the original downloaded file (CONTROL + V).
+  - Close the file and Save Changes.
