@@ -65,12 +65,12 @@ To do so:
 
 1. Go to [someonewhocares.org/hosts](http://someonewhocares.org/hosts).
 2. Select "txt file" on the right-side menu (or simply download the file).
-3. Open downloaded file (it may @ [%USERPROFILE%/Downloads](%USERPROFILE%/Downloads) under hosts.txt name).
+3. Open downloaded file (it may @ `%USERPROFILE%/Downloads` under hosts.txt name).
   - Select All content within the file (CONTROL + A)
   - Copy the content of if (CONTROL + C).
   - Close the file.
-4. On Windows 10, go to  [C:\Windows\System32\drivers\etc\hosts](C:\Windows\System32\drivers\etc\hosts)
-5. Find Notepad Application and, to open it, right-click on it and and select "Run as Administrator"
+4. On Windows 10, go to  `C:\Windows\System32\drivers\etc\hosts`
+5. Find `Notepad` Application on the Windows Menu and, to open it, right-click on it and and select `Run as Administrator`
   - Select All content within the file (CONTROL + A)
   - Past the content of the original downloaded file (CONTROL + V).
   - Close the file and Save Changes.
