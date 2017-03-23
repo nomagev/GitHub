@@ -65,7 +65,8 @@
 
 **Note:** Assumption is you have been operating with git before, as the following instructions assume recurring interactions.
 
-* **On-going Operations** - Once you have created files and git is active on your repository, every time a file is modified and saved on the local clone of the repository, git will keep track of it. To have visibility on what is happening, the following three commands will have a recurring use:<br><br>
+* **On-going Operations** - Once you have created files and git is active on your repository, every time a file is modified and saved on the local clone of the repository, git will keep track of it. The following commands will have a recurring use on your daily interaction with git and your project:<br><br>
+
     ```git add filename``` (or `.` or `--all` if you want to add all files in the directory)<br>
     ```git status```<br>
     ```git commit -m "Commit Message" filename```<br>
