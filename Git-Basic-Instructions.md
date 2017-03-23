@@ -66,10 +66,10 @@
 **Note:** Assumption is you have been operating with git before, as the following instructions assume recurring interactions.
 
 * **On-going Operations** - Once you have created files and git is active on your repository, every time a file is modified and saved on the local clone of the repository, git will keep track of it. To have visibility on what is happening, the following three commands will have a recurring use:<br><br>
-    ```git init .```<br>
-    ```git add filename (or . if you want to add all files in the directory)```<br>
+    ```git add filename``` (or `.` or `--all` if you want to add all files in the directory)<br>
     ```git status```<br>
     ```git commit -m "Commit Message" filename```<br>
+    ```git commit -am "Commit Message"``` (if you want to add and commit all changes in one go)<br>
     ```git checkout filename (or . if you want to add all files in the directory)```<br>
     ```git push```<br>
     ```git pull```<br>
