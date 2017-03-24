@@ -1,6 +1,6 @@
 # Basic Git Manual
 
-## A personal Guide to Install and Use Git on Microsoft Windows 10
+## A personal Guide to Install and Use Git
 
 ### 1. Software Download:
 
