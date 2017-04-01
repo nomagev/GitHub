@@ -67,19 +67,24 @@
 
 * **On-going Operations** - Once you have created files and git is active on your repository, every time a file is modified and saved on the local clone of the repository, git will keep track of it. The following commands will have a recurring use on your daily interaction with git and your project:<br><br>
 
-    ```git add filename``` (or `.` or `--all` if you want to add all files in the directory)<br>
-    ```git status```<br>
-    ```git commit -m "Commit Message" filename```<br>
-    ```git commit -am "Commit Message"``` (if you want to add and commit all changes in one go)<br>
-    ```git checkout filename (or . if you want to add all files in the directory)```<br>
-    ```git push```<br>
-    ```git pull```<br>
+    ```git init``` (it sets the folder and sub-folders to be tracked by git)<br>
+    ```git add filename``` (or `.` or `--all` instead of "filename", if you want to add all files in the directory)<br>
+    ```git status``` (Provides status on files modified and/or commited)<br>
+    ```git commit -m "Commit Message" filename``` (commits specific "filename" to later push)<br>
+    ```git commit -am "Commit Message"``` (commits all filenames set as commited in one go)<br>
+    ```git branch``` (displays all branches present in repository)<br>
+    ```git branch branchname``` (creates a branch with the corresponding "branchname")<br>
+    ```git checkout branchname``` (Switches active branch into "branchname")<br>
+    ```git checkout branchname filename``` (Brings "filename" from "branchname" into the active branch)<br>
+    ```git checkout filename``` (or . if you want to add all files in the directory)<br>
+    ```git push``` (sends latest commited changes, on your local repo, **into** the global one)<br>
+    ```git pull``` (requests latest commited changes, **from** the global repo, into your local one)<br>
 
 ### 6. Commits Operations:
 
 **Note:** Assumption is you have been operating with git and you have your own repository with multiple commits.
 
-* **Removing a commit wrongly pushed** - it may happen, at some point, that something, somewhere, went terribly wrong in your code. There are two solutions for it:<br><br>
+* **Removing a commit wrongly pushed** - it may happen, at some point, that something, somewhere, went terribly wrong in your code. There are two solutions for it:<br>
 
 1. Fix it, re-commit the changes and push them to your repository (preferred option).
 2. Remove the commit from the repository and go back to the previous state (not preferred).
